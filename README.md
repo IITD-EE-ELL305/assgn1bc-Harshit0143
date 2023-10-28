@@ -75,10 +75,10 @@ This will make the later part of this assignment easier for you.
   - [x] Add appropriate control signals to enable write to _ra_ and choose the new _PC_
 - [x] ret instruction
   - [x] You simply have to load _ra_ into PC, so add a connection from output of _ra_ tp input of _PC_ through the Mux (you will have to expand the Mux and modify the control signals)
-- [ ] Test
-  - [ ] Load 2 numbers in the regfile, then call a function that will add them and store result in regfile and return, then store that result in data memory
-  - [ ] Check data memory for the correct result, and also verify that the PC behaves correctly through the call and return instructions
-  - [ ] **Commit and push to Github with message "call and ret instructions"**
+- [x] Test
+  - [x] Load 2 numbers in the regfile, then call a function that will add them and store result in regfile and return, then store that result in data memory
+  - [x] Check data memory for the correct result, and also verify that the PC behaves correctly through the call and return instructions
+  - [x] **Commit and push to Github with message "call and ret instructions"**
 3. Add support for _nop_ and _halt_ instructions
 - [x] Do you need any hardware modification? 
 - [x] Modify the control signals appropriately for _nop_
