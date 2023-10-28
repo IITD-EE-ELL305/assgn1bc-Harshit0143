@@ -1039,10 +1039,12 @@
       <a name="addrWidth" val="10"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 10 8
-18 0 0 9c 18 0 0 9c
-18 0 0 9c 13 0 44 4
-17 0 88 4 0 0 0 f8
-a 0 44 4 14 0 88 4
+5 0 44 4 b 0 88 4
+0 80 c4 0 10 0 c 2c
+8 0 0 84 ff ff 10 5
+f 0 10 5 2c 0 0 9c
+0 0 40 75 0 0 54 5
+0 0 0 f8 0 0 0 7d
 0 0 0 a0
 </a>
       <a name="line" val="quad"/>
