@@ -56,12 +56,12 @@ This will make the later part of this assignment easier for you.
         *Checking register values: Under the 'Simulate' menu you will find "Timing diagram". Open that and click on the 'Add or remove signals' button. Expand "REGFILE" and select r1...r5 (whichever register you stored to). Now when you simulate, you can directly see the value of the registers at each time step.
   - [ ] **Commit and push to Github with message "store instruction"**
 2. Add support for branch and call instructions
-- [ ] We will only implement the _beq_ instruction in a slightly simplified format:  
+- [x] We will only implement the _beq_ instruction in a slightly simplified format:  
       Use only the last 18 bits as the offset (same as for load and store). That way you do not need to modify the immediate generation circuit.
-  - [ ] For branching, the PC has to be added to the _imm_ (add appropriate wires to send PC to ALU_X through a Mux
-  - [ ] Add the corresponding control signal
-  - [ ] Take the ALU output and put it back into PC through a Mux
-  - [ ] Add the correct control signal depending on the Flags register to choose the correct input to PC
+  - [x] For branching, the PC has to be added to the _imm_ (add appropriate wires to send PC to ALU_X through a Mux
+  - [x] Add the corresponding control signal
+  - [x] Take the ALU output and put it back into PC through a Mux
+  - [x] Add the correct control signal depending on the Flags register to choose the correct input to PC
 - [ ] Test
   - [ ] Load some value to two registers
   - [ ] Run the compare instruction to compare them and save the result in the Flags register
