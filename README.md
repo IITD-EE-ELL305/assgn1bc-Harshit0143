@@ -62,12 +62,14 @@ This will make the later part of this assignment easier for you.
   - [x] Add the corresponding control signal
   - [x] Take the ALU output and put it back into PC through a Mux
   - [x] Add the correct control signal depending on the Flags register to choose the correct input to PC
+  
+  * Assuming beq is always Imm type
 - [ ] Test
-  - [ ] Load some value to two registers
-  - [ ] Run the compare instruction to compare them and save the result in the Flags register
-  - [ ] Run the branch instruction to make the PC jump to a positive and negative offset
-  - [ ] You can simply check the value of _PC_ to see if your circuit works correctly
-  - [ ] **Commit and push to Github with message "beq instruction"**
+  - [x] Load some value to two registers
+  - [x] Run the compare instruction to compare them and save the result in the Flags register
+  - [x] Run the branch instruction to make the PC jump to a positive and negative offset
+  - [x] You can simply check the value of _PC_ to see if your circuit works correctly
+  - [x] **Commit and push to Github with message "beq instruction"**
 - [x] call instruction
   - [x] Add the _ra_ register which will hold PC+4; The remaining hardware is the same as for branch
   - [x] Add appropriate control signals to enable write to _ra_ and choose the new _PC_
