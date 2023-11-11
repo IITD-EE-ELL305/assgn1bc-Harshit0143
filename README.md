@@ -110,9 +110,9 @@ This will make the later part of this assignment easier for you.
 - [x] For each instruction in the list above, write down the control word values, encode them into little-endien hex and add it at the correct ROM address
 - [x] Test your previous program without any modifications. It should work.
 - [x] **Commit and push to Github with message "ROM controller"**
-- [ ] Now we will see how easy it is to add new instructions to the ROM based controller:
-  - [ ] Add instructions for and, or by simply generating the control word and putting it into the ROM
-  - [ ] Think of other instructions you can implement without hardware modifications!
+- [x] Now we will see how easy it is to add new instructions to the ROM based controller:
+  - [x] Add instructions for and, or by simply generating the control word and putting it into the ROM
+  - [x] Think of other instructions you can implement without hardware modifications! Added 'xor'. Gave it opcode 11110
 5. Adding input and output devices
 - [ ] The MMAPPED_IO circuit component contains a keyboard and TTY (text terminal) that you will use, so add it to the circuit
 - [ ] Connect the Address, Data In and Data Out busses appropriately

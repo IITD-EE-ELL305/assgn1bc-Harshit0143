@@ -10,7 +10,10 @@ codes = {
 'beq' : ['10000', (True,)],
 'call': ['10011', (True,)],
 'ret' : ['10100', (False,)],
-'hlt' : ['11111', (False,)]
+'hlt' : ['11111', (False,)],
+'and' : ['00110' , (False , True)],
+'or'  : ['00111' , (False , True)],
+'xor' : ['11110' , (False , True)],
 }
 
 def convert(binary_string , len_):
@@ -28,6 +31,19 @@ def pcVal(ops , isEq):
     return bit_str(higher) + bit_str(lower)
 def bit_str(bit):
     return '1' if bit else '0'  
+
+def give_ALU_SEL(ops):
+    if ops == 'sub':
+        return "0001"
+    elif ops == 'and':
+        return "0010"
+    elif ops == 'or':
+        return '0011'
+    elif ops == 'xor':
+        return '0100'
+    return '0000'
+
+write_enable_cmds = ['ld' , 'add' , 'sub' , 'and' , 'or' , 'xor']
 RegWEn = False
 BSel = False
 FlWEn = False
@@ -43,10 +59,10 @@ for ops in codes:
     OP = codes[ops][0]
     for I in codes[ops][1]:
         for isEq in [False , True]:
-            RegWEn = ops == 'add' or ops == 'sub' or ops == 'ld'
+            RegWEn = ops in write_enable_cmds  
             BSel = I
             FlWEn = ops == 'cmp'
-            ALUSel = "0001" if ops == "sub" else "0000"
+            ALUSel = give_ALU_SEL(ops)
             WBSel = ops == 'ld'
             rs2Sel = ops == 'st'
             ASel = ops == 'beq'

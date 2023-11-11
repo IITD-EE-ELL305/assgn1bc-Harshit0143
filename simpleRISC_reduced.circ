@@ -1040,11 +1040,11 @@
       <a name="addrWidth" val="10"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 10 8
-18 0 0 9c 18 0 0 9c
-18 0 0 9c 13 0 44 4
-17 0 88 4 0 0 0 f8
-a 0 44 c 14 0 88 4
-0 0 0 a0
+13 0 44 4 17 0 88 4
+5 0 88 c 0 80 c4 30
+5 0 cc 34 0 80 c4 38
+5 0 cc 3c 0 80 c4 f0
+5 0 cc f4
 </a>
       <a name="line" val="quad"/>
     </comp>
@@ -4545,9 +4545,11 @@ a 0 44 c 14 0 88 4
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 7 16
 2000 2000 3000 3000 2080 2080 3080 3080
-12*0 800 800 1800 1800 34*0 3040 3040
+12*0 800 800 1800 1800 2100 2100 3100
+3100 2180 2180 3180 3180 26*0 3040 3040
 0 0 1020 1020 0 0 1010 1014
-10*0 100a 100a c c 42*0 1 1
+10*0 100a 100a c c 38*0 2200 2200
+3200 3200 1 1
 </a>
       <a name="dataWidth" val="16"/>
     </comp>
