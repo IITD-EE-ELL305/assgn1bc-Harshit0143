@@ -114,8 +114,8 @@ This will make the later part of this assignment easier for you.
   - [x] Add instructions for and, or by simply generating the control word and putting it into the ROM
   - [x] Think of other instructions you can implement without hardware modifications! Added 'xor'. Gave it opcode 11110
 5. Adding input and output devices
-- [ ] The MMAPPED_IO circuit component contains a keyboard and TTY (text terminal) that you will use, so add it to the circuit
-- [ ] Connect the Address, Data In and Data Out busses appropriately
+- [x] The MMAPPED_IO circuit component contains a keyboard and TTY (text terminal) that you will use, so add it to the circuit
+- [x] Connect the Address, Data In and Data Out busses appropriately
       Functioning of the devices:
       Both devices have a control register and data register; and the keyboard has a status register also. The details are as follows:
       - Keyboard status register address: 0x00000400 (only bit 0 of the status register is useful; indicating the availability of new data)
